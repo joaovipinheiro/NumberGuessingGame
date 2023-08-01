@@ -1,13 +1,12 @@
 import java.util.Scanner;
 class App {
-    public static void main(String[] args){
-        gessingNumberGame(){
+    public static void guessingNumberGame(){
 
             Scanner sc = new Scanner(System.in);
             int number = 1 + (int)(100 * Math.random());
             int K = 5;
             int i, guess;
-            System.out.println("Escolha um número" + "entre 1 e 100." + "Adivinhe o número" + " within 5 trials.");
+            System.out.println("Escolha um número" + " entre 1 e 100." + " Adivinhe o número" + " em 5 tentativas.");
             for (i = 0; i < K; i++) {
                 System.out.println("Adivinhe o número:");
                 guess = sc.nextInt();
@@ -23,11 +22,11 @@ class App {
             }
             if (i == K) {
                 System.out.println("Você esgotou" + " todas as tentativas.");
-                System.out.println("O número era" + number);
+                System.out.println("O número era " + number);
             }   
         }
-            public static void main(String[] args){
-                gessingNumberGame()
+            public static void main(String[] arg){
+                guessingNumberGame();
             
         }
     }
